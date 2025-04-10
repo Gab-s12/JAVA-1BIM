@@ -1,0 +1,74 @@
+// Completar a função para somar dois números 
+function somar(a, b) { 
+return a + b; 
+} 
+console.log(somar(5, 3)); // 8
+
+//Criar uma função que retorne 'Par' ou 'Ímpar' 
+function parOuImpar(numero) { 
+return numero % 2 === 0 ? 'Par' : 'Ímpar'; 
+} 
+console.log(parOuImpar(4)); // 'Par'
+function Modificarmetro(metros) {
+  let centimentos = metros * 100;
+  let milimetros = metros *1000;
+  console. log ("Valor em metros:" + metros);
+  console. log ("Valor em centimetros:" + centimetros);
+  console. log ("Valor em milimetros:" + milimetros);
+}
+Modificarmetro(2);
+//ouuuuuuu let entrada = prompt("Digite um valor em metros:");
+converterMedidas(Number(entrada));
+
+//.Dado o array const frutas = ['maçã', 'banana'];, adicione as frutas 'laranja' e 'uva' 
+ao final do array, usando método. 
+const frutas = ['maçã', 'banana'];
+frutas.push ('laranja', 'uva')
+console.log(frutas)
+
+//.Considere o array const numeros = [1, 2, 3, 4, 5];. Remova o último elemento do 
+array e armazene-o em uma variável chamada ultimoNumero, usando método.   
+const numeros = [1, 2, 3, 4, 5];
+const ultimoNumero = numeros.pop();//o pop é usado sem argumento 
+console.log (ultimoNumero);
+console.log (numeros);
+
+Dado o array const cores = ['vermelho', 'azul', 'verde'];, remova o primeiro 
+elemento e armazene-o em uma variável chamada primeiraCor, usando método .   
+const cores = ['vermelho', 'azul', 'verde'];
+const primeiraCor = cores.shift();
+console.log("A primeira cor é" + primeiraCor);
+console.log("As cores restantes são: " + cores);
+
+//.Com o array const animais = ['cachorro', 'gato'];, adicione os animais 'elefante' e 
+'leão' no início do array, usando método.  
+const animais = ['cachorro', 'gato'];
+animais.unshift('elefante','leão');
+console.log("Os animais são: " + animais);
+
+//Dado o array const numeros = [10, 20, 30, 40, 50];, remova os dois primeiros 
+elementos e, em seguida, adicione os números 5 e 15 nas primeiras posições, 
+usando método.  
+const numeros = [10, 20, 30, 40, 50];
+numeros.splice(0,2);// a partir da posição 0 remova 2 elementos
+numeros.unshift (5,15);
+console.log("Os novos números são: " + numeros);
+
+// Considere o array const letras = ['a', 'b', 'c', 'd', 'e'];. Crie um novo array contendo 
+apenas os elementos 'b', 'c' e 'd', usando método
+const letras = ['a', 'b', 'c', 'd', 'e'];
+const novoArray = letras.slice(1,4);
+console.log("O novo Array é: " + novoArray);
+
+//Dado os arrays const array1 = [1, 2, 3]; e const array2 = [4, 5, 6]; crie um novo 
+array que combine os elementos de ambos, usando o método concat 
+const array1 = [1, 2, 3];
+
+
+
+
+
+
+
+
+
