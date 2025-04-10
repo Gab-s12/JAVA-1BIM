@@ -63,12 +63,32 @@ console.log("O novo Array é: " + novoArray);
 //Dado os arrays const array1 = [1, 2, 3]; e const array2 = [4, 5, 6]; crie um novo 
 array que combine os elementos de ambos, usando o método concat 
 const array1 = [1, 2, 3];
+const array2 = [4, 5, 6]; 
+const array3= array1.concat(array2);
+console.log("O novo array é: "+ array3);
 
+//Criar uma função que recebe um nome e retorna uma saudação personalizada
+function saudacao(nome) { 
+  return "Olá," + nome + "!"; // ou assim  return `Olá, ${nome}!`;
+} 
+console.log(saudacao("Carlos")); // "Olá, Carlos!" 
+console.log(saudacao("Ana")); // "Olá, Ana!" 
 
+//Qual a diferença entre var, let e const?  
+A principal diferença entre o cont, let e var é que o Const não pode mudar o valor, mas sim 
+o conteúdo em objetos ou arrays. Enquanto o let e o var conseguem mudar o valor, porém é necessário evitar o var
+por ter um comportamento antigo. 
+-resumo:
+**const** não permite reatribuir o valor da variável, mas o conteúdo de objetos ou arrays pode ser modificado.
+**let** permite mudar o valor da variável e tem escopo de bloco (mais seguro e moderno).
+**var** também permite mudar o valor, mas deve ser evitado, pois tem um comportamento antigo e escopo de função, 
+o que pode causar erros inesperados.
 
+//O que acontece quando você tenta acessar uma variável que ainda não foi definida?   
+Quando tentamos acessar uma variável que ainda não está definida, o JavaScript gera um erro chamado: 
+ReferenceError - dizendo que a variável não está definida.
 
-
-
-
-
+//Como funciona o typeof? Escreva um código usando o typeof  
+O Typeof funciona para saber o tipo do dado. Exemplo:
+typeof "Gabi" //string
 
