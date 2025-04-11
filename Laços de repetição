@@ -1,0 +1,18 @@
+//for (repetição com controle):
+for (int i=0; i <5; i++){ // começa com o 0, vai até o 4 e a cada volta soma mais um
+  console.log("Repetição número" + i);
+}
+
+//while  (repete enquanto a condição for verdadeira):
+int contador = 0;
+
+while (contador < 3) {
+   console.log("Contador: " + contador);
+    contador++;
+}
+//do...while (garante que vai rodar pelo menos uma vez):-não entendi mas pena 
+int num = 0;
+do {
+    console.log("Número: " + num);
+    num++;
+} while (num < 3);
