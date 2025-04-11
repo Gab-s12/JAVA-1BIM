@@ -78,3 +78,71 @@ function cumprimentar(nome, idade) {
 }
 
 cumprimentar("Gabi 💋✨", 15); 
+
+
+//objeto{propriedades: '' e pode ter listas ou método-funções}
+const estudante = {
+    nome:"Melissa",
+    idade:15,
+    prontuario:12345,
+    bolsista:true,
+    telefones: ["1234-5678","8769-098"],
+    endereco:[{
+        rua:"Nome da rua",
+        numero:"12",
+        bairro:"Santa Cruz"
+    },
+    {
+        rua:"Nome da rua",
+        numero:"12",
+        bairro:"Santa Cruz"   
+    }]
+}
+
+
+//verificar se existe a propriedade endereço
+const chaveObjeto = Object.keys(estudante)//vai voltar string e não objeto 
+console.log("", chaveObjeto)//aq retorna só as propriedades
+
+if (!chaveObjeto.includes("endereco")){//se a propriedade end não existe - a exclamção é o 'não'
+    console.error("É necessário ter um endereço cadastrado")//mensagem de erro
+}else {
+    console.log("Endereço cadastrado")
+}
+
+
+console.log(typeof estudante) //verifica o tipo de dados 
+console.log(estudante)
+
+console.log(estudante.telefones)//lista de telefones
+console.log(estudante.telefones[0])//lista de telefone do índice 0 
+
+console.log(estudante.idade)
+console.log(estudante["idade"])
+
+//adicionar um objeto dentro de outro objeto 
+estudante.endereco={
+    rua:"Nome da rua",
+    numero:"12",
+    bairro:"Santa Cruz"
+}
+console.log(estudante)
+console.log(estudante.endereco.bairro)
+
+function concatenarArray(array1,array2){
+  return array1.concat(array2);//concat serve para unir os dois arrays em um só e retorna o valor 
+}
+
+const numeros=[1,2,3,4,5,6,7,8,9,10];
+const parteNum=numeros.slice(3,8)//o slice pega os elementos do índice 3 até o 7 (inicio, fim)
+console.log(parteNum);
+
+const frutas = ['Maçã', 'Banana', 'Laranja', 'Limão', 'Abacaxi']
+frutas.splice(2,2,'Kiwi', 'Pêssego')//remove ou adiciona elementos
+console.log(frutas);
+
+const menuPrincipal=['Lasanha','Pizza', 'Hamburguer']
+const menuSobremesas=['Pudim', 'Sorvete','Torta de maçã']
+const menuCompleto = menuPrincipal.concat(menuSobremesas);
+console.log(menuCompleto) 
+
