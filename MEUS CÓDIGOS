@@ -1,0 +1,80 @@
+//Atividade slides 
+//O que é lógica de programação?
+
+//Base para criar programas estruturados, resolvendo problemas com instruções passo a passo.
+//Node.js
+//Plataforma para rodar JavaScript fora do navegador.
+//Tipos de dados
+
+//Números (inteiros e decimais), Strings (textos) e Booleanos (true/false).
+//Variáveis (let e const)
+
+//let pode mudar o valor, const é fixa.
+//Operadores
+
+//Aritméticos: +, -, *, /
+//Lógicos: && (E), || (OU), ! (NÃO)
+//Estruturas de controle (if e else)
+
+//Decisões no código baseadas em condições.
+//Funções
+
+//Blocos reutilizáveis de código. Podem receber parâmetros e retornar valores.
+//Escopo de Variáveis
+
+//Local (dentro de uma função) e Global (pode ser acessada de qualquer lugar).
+
+// Exercício 1
+let nome = "Gabi";
+let idade = 15;
+let chovendo = false;
+
+console.log(typeof nome);      
+console.log(typeof idade);    
+console.log(typeof chovendo);  
+
+// Exercício 2 - Cálculo da média
+function media(num1, num2, num3) {
+  return (num1 + num2 + num3) / 3;
+}
+
+let resultadoFinal = media(6, 10, 9);
+
+if (resultadoFinal >= 7) {
+  console.log("Aprovado");
+} else {  // else if (resultadoFinal < 7) 
+  console.log("Reprovado");
+}
+
+// Exercício 3 - Verificar se está chovendo
+let estaChovendo = true; 
+
+if (estaChovendo) {  
+  console.log("Está chovendo");
+} else {
+  console.log("Não está chovendo");
+}
+
+// Exercício 4 - Função que retorna o dobro
+function dobro(num) {
+  (return num * 2;)
+}
+
+console.log(dobro(5)); // Teste da função
+
+// Exercício 5 - Verificar maioridade
+let idadePessoa = 18;
+
+if (idadePessoa === 18) {  
+  console.log("Você tem 18 anos");
+} else if (idadePessoa > 18) {
+  console.log("Você tem mais de 18 anos ");
+}
+
+// Exercício 6 - Cumprimentar a pessoa
+function cumprimentar(nome, idade) {
+  console.log(`Olá, ${nome}!`);  
+  console.log(`Idade: ${idade}`); 
+}
+
+cumprimentar("Gabi 💋✨", 15); 
