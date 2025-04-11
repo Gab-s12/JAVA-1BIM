@@ -1,0 +1,78 @@
+//1.1 Crie três variáveis com let:
+letnome="Gabrielle"
+letidade=12
+letestudando=true
+typeof "Gabrielle"
+typeof 12
+typeof true
+//1.2 O que acontece se você tentar alterar o valor de uma variável const?Teste com este código e explique o erro:
+//const curso = "JS"; //const é usada para declarar variáveis constantes, ou seja, valores que não podem ser alterados depois de definidos. 
+//curso = "Python";
+
+//2.1 O que será exibido no console?
+let a = 5;
+let b = "5";
+console.log(a == b);
+console.log(a === b); 
+// no  1° console.log será exibido true, pois o valor entre as variáveis são os mesmos. Agora no 2° console.log será false já que uma variável é tipo numero e a outra string. 
+
+//2.2 Crie um código que verifique se uma pessoa pode tirar carteira de motorista:
+let idade=18
+let documentosemdia=false
+if (idade>=18 && documentosemdia){ // aq não coloca o let 
+  console.log("Você pode tirar carteira de motorista")
+}
+else{
+  console.log("Você não pode tirar a carteira de motorista")
+}
+
+//3.1 Escreva um programa que receba a média de um aluno e diga:
+let media = 8
+if (media>=7){
+  console.log("Aprovado")
+}
+else if (media<=6.9 && media>=5){
+  console.log("Recuperação")
+}
+else {
+  console.log("Reprovado")
+}
+
+//3.2 Use switch para imprimir o dia da semana com base no número: -- pesquisar sobre não entendi
+
+
+//4.1 Crie uma lista com 5 frutas e:
+let frutas=['Banana','Maçã', 'Pera', 'Morango', 'Uva']
+frutas.push('Maracuja');
+frutas.shift();
+console.log(frutas.length);
+console.log(frutas[frutas.length -1])
+
+//4.2 Com base na lista abaixo:
+let alunos = ["Ana", "João", "Pedro", "Lívia"];
+let turma1 = alunos.slice(0,2);
+let turma2 = alunos.slice(2);
+alunos.splice (2,2, 'Gabi');
+let turmas = turma1.concat(turma2);
+console.log("Turma 1:", turma1);      
+console.log("Turma 2:", turma2);      
+console.log("Alunos atualizados:", alunos); 
+console.log("Turmas unidas:", turmas);     
+
+//5.1 Crie uma função que receba dois números e retorne a média.
+function média (a,b){
+  return (a+b)/2 // coloca entre parentes se não o java vai fazer primeiro a divisão
+}
+let resultado= média(10,10);
+console.log(resultado)
+
+//5.2 Crie uma função cumprimentar que receba um nome e idade e exiba:
+let nome="Gabrielle"
+let idades = 16
+function saudacao (){
+  console.log(`Olá, ${nome}! Você tem ${idades} anos.`);
+}
+saudacao() // isso aq é importanteeee
+
+//5.3 Reescreva a função acima usando arrow function.
+const saudacaoo = (nome,idadesss) =>`Olá, ${nome}! Você tem ${idadesss} an
