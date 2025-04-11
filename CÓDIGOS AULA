@@ -1,0 +1,215 @@
+// arays ou lista
+//declaracao de arrays
+         
+//             0         1          2         3
+let cores = ['Azul', 'Amarelo', 'Vermelho', 'verde']
+console.log(cores)
+
+//acessar item da lista
+console.log(cores[2])
+
+//propriedade length
+console.log(cores.length) //4
+let ultimoElemento = cores[cores.length - 1] // 3
+console.log(ultimoElemento)
+
+//adicionar elementos
+const notas = [10, 6, 8]
+//push - adicionar elementos no final do array
+notas.push(9)
+console.log(notas)
+
+//unshift - adiciona elementos no início do array
+notas.unshift(5)
+console.log(notas)
+
+//deletando itens do arrays
+//pop - deletar o último item do array
+notas.pop()
+console.log(notas)
+
+//shift - deleta o primeiro item da lista
+notas.shift()
+console.log(notas)
+
+// método slice
+// slice(inicio, fim)
+const listaDeEstudantes = ['João', 'Juliana', 'Ana', 'Caio', 'Lara',
+    'Aline', 'Guilherme', 'Carlos', 'Paulo', 'Renata'
+]
+
+console.log(listaDeEstudantes)
+
+const sala1 = listaDeEstudantes.slice(0, listaDeEstudantes.length/2) //5
+const sala2 = listaDeEstudantes.slice(listaDeEstudantes.length/2)
+
+console.log(sala1)
+console.log(sala2)
+
+//splice(inicio, quantidade, elemento a ser adicionado). Substitui elementos da lista
+sala2.splice(2, 2, 'Rodrigo')
+console.log(sala2)
+
+//concatenar listas
+//concat
+const salaJs = ['Evandro', 'Camila']
+const salaPython = ['Juliana', 'Leonardo', 'Raquel']
+
+const salasUnidas = salaJs.concat(salaPython)
+console.log(salasUnidas)
+
+//lista de listas
+const alunos = ['Evandro', 'Camila', 'Maria', 'Gabriel']
+const media = [10, 5, 6, 8]
+const lista = [alunos, media]
+
+console.log(`A aluna no índice 1 se chama ${lista[0][1]}  
+    e sua média é ${lista[1][1]}`)
+
+//percorrer listas
+console.log(lista)
+
+//função sem retorno
+function mensagem () {
+    console.log('Olá, mundo')
+}
+mensagem()
+
+// funcao com retorno
+function soma (a, b) {
+  return a + b
+}
+let resultado = soma(5, 6)
+console.log(resultado)
+
+console.log(soma(5, 5))
+
+// função sem parâmetro
+function mostrarHoraLocal () {
+    let hora = new Date()
+    console.log(`Hora atual: ${hora.toLocaleTimeString()}`)
+}
+
+mostrarHoraLocal()
+
+// função com parâmetro
+function cumprimentar(nome, idade){
+  console.log(`Olá, ${nome}, sua idade é ${idade}`)
+}
+
+cumprimentar('Ana', 20)
+cumprimentar('Pedro', 16)
+cumprimentar('João', 17)
+
+// funcao declarativa
+mensagem()
+
+function mensagem () {
+    console.log('Olá, mundo')
+}
+
+// funcao de expressão
+const mensagem1 = function(){
+  console.log('Olá, mundo')
+}
+mensagem1()
+
+//funcao de seta sem parâmetro ARROW FUNCTION
+const saudacao = () => 'Olá, turma'
+saudacao()
+
+//funcao de seta com parâmetro
+const saudacao1 = (nome) => `Olá, ${nome}`
+saudacao1('Laís')
+
+function testeVar () {
+    if (true){
+      var x = 10 //dentro do bloco
+    }
+    console.log(x)
+  }
+  testeVar() // 10
+ 
+  function testeLet () {
+    if (true){
+      let y = 20
+    }
+    console.log(y)
+  }
+  testeLet() // y is not defined
+
+const estudante = {
+    nome: "Melissa",
+    idade: 15,
+    prontuario: 12345,
+    bolsista: true,
+    telefones: ["1234-5678", "8765-4321"]
+}
+
+// verificar se existe a propriedade endereço
+const chaveObjeto = Object.keys(estudante)
+console.log("", chaveObjeto)
+
+if (!chaveObjeto.includes("endereco")){ // se propriedade end não existe
+    console.error("É necessário ter um endereço cadastrado") // mensagem de erro
+}else {
+    console.log("Endereço cadastrado")
+}
+
+const estudante = {
+    nome: "Vinicius",
+    idade: 15,
+    prontuario: 1234,
+    turma: "Desenvolvimento web",
+    bolsista: true,
+    telefones: ["1234-56789", "9874-84833"],
+    // endereco: [{
+    //     rua: "Nome da rua",
+    //     numero: "500",
+    //     bairro: "Santa Cruz"
+    // },
+    // {
+    //     rua: "Rua 2",
+    //     numero: "23B",
+    //     bairro: "Sabiá"
+    // }]
+}
+
+console.log(typeof estudante) //object
+console.log(estudante)
+
+//acessando propriedades do objeto
+console.log(estudante.telefones) // lista de telefones
+console.log(estudante.telefones[1])
+console.log(estudante['idade'])
+
+// estudante.endereco = {
+//     rua: "Nome da rua",
+//     numero: "500",
+//     bairro: "Santa Cruz"
+// }
+
+// console.log(estudante.endereco.rua)
+
+// criando um objeto
+let pessoa = {
+  nome: "Ana",
+  idade: 25,
+  profissao: "Engenheira"
+};
+
+// alterando a propriedade idade do objeto pessoa
+pessoa.idade = 26;
+
+
+// ou também pode ser alterado usando colchetes
+// pessoa["idade"] = 26;
+
+// removendo uma propriedade
+delete pessoa.profissao;
+
+// exibindo no console o resultado
+console.log(pessoa);
+// Resultado: { nome: 'Ana', idade: 26 }
+
+
