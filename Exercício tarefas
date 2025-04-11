@@ -28,8 +28,6 @@ console.log("Lista original de tarefas:", tarefas);
 
 
 
-
-
 //PERCORRENDO- 
 let numeros = [3, 7, 10, 2, 5];
 
@@ -40,4 +38,38 @@ for (let numero of numeros) { // VAI PEGAR CADA VALOR DO ARRAY E COLOCAR DENTRO 
     console.log(numero + " é ímpar.");
   }
 }
+
+//ITERANDO ARRAYS-
+// Criando o array de frutas
+const frutas = ["maçã", "banana", "uva", "pera", "abacaxi"];
+
+console.log("🔁 1. Loop For Tradicional");
+for (let i = 0; i < frutas.length; i++) {
+  // i começa em 0 e vai até o último índice do array
+  // frutas[i] acessa o elemento atual
+  console.log(frutas[i]); // Resultado: "maçã", "banana", "uva", "pera", "abacaxi"
+}
+
+console.log("\n💬 2. Método forEach()");
+frutas.forEach(fruta => {
+  // 'fruta' representa cada item do array
+  // A função é executada para cada fruta
+  console.log(fruta); // Resultado: "maçã", "banana", "uva", "pera", "abacaxi"
+});
+
+console.log("\n🧩 3. Método map()");
+const frutasMaiusculas = frutas.map(fruta => {
+  // Transforma a fruta em letras maiúsculas
+  return fruta.toUpperCase();
+});
+console.log(frutasMaiusculas); 
+// Resultado: ["MAÇÃ", "BANANA", "UVA", "PERA", "ABACAXI"]
+
+console.log("\n🔍 4. Método filter()");
+const frutasComA = frutas.filter(fruta => {
+  // Verifica se a fruta contém a letra 'a'
+  return fruta.includes('a');
+});
+console.log(frutasComA); 
+// Resultado: ["maçã", "banana", "abacaxi"]
 
