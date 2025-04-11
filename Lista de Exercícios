@@ -1,3 +1,5 @@
+//Let - Variáveis declaradas com `let` podem ter seu valor alterado posteriormente.
+//ConstVariáveis declaradas com`const` são imutáveis, seu valor não pode ser alterado após a inicialização.
 // Completar a função para somar dois números 
 function somar(a, b) { 
 return a + b; 
@@ -73,6 +75,20 @@ function saudacao(nome) {
 } 
 console.log(saudacao("Carlos")); // "Olá, Carlos!" 
 console.log(saudacao("Ana")); // "Olá, Ana!" 
+
+// quando criamos uma função podemos fazer ela de dois tipos:
+const saudacao = function(nome, idade) { // aq nós atribuímos uma função a uma variável oq ue ela estar armazenada 
+  console.log(`Olá, ${nome}! Você tem ${idade} anos.`);
+};
+//ou assim normal:
+saudacao("Ana", 25);     // Olá, Ana! Você tem 25 anos.
+saudacao("Carlos", 30);  // Olá, Carlos! Você tem 30 anos.
+function saudacao(nome, idade) {
+  console.log(`Olá, ${nome}! Você tem ${idade} anos.`);
+}
+
+saudacao("Ana", 25);     // Olá, Ana! Você tem 25 anos.
+saudacao("Carlos", 30);  // Olá, Carlos! Você tem 30 anos.
 
 //Qual a diferença entre var, let e const?  
 A principal diferença entre o cont, let e var é que o Const não pode mudar o valor, mas sim 
