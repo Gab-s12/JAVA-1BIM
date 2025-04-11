@@ -25,3 +25,19 @@ console.log("Lista original de tarefas:", tarefas);
  console.log("Primeira tarefa removida:", primeiraTarefa);
  console.log("Tarefas selecionadas:", tarefasSelecionadas);
  console.log("Lista final de tarefas:", tarefasCompletas);
+
+
+
+
+
+//PERCORRENDO- 
+let numeros = [3, 7, 10, 2, 5];
+
+for (let numero of numeros) { // VAI PEGAR CADA VALOR DO ARRAY E COLOCAR DENTRO DE UMA VARIÁVEL NÚMERO 
+  if (numero % 2 === 0) { //VERIFICA SE É PAR 
+    console.log(numero + " é par."); 
+  } else {
+    console.log(numero + " é ímpar.");
+  }
+}
+
